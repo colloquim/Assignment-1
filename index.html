@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Registration Page</title>
-    </head>
-    <body>
-        <header class="header">
-            <h1>Welcome to Our Registration Page</h1>
-        </header>
-        <p> Please Register below and view a list of users</p>
-        <form action="#" method="post">
-            <h2>Registration Form</h2>
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the basics of HTML5 semantic structure, accessibility best practices, and beginner-friendly SEO techniques.">
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web design">
+  <meta name="author" content="Collins Kibet">
+  <title>Introduction to Semantic HTML5</title>
+</head>
+<body>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+  <header>
+    <h1>Semantic HTML5 for Accessible & SEO-Friendly Web Pages</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#seo">SEO Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
+  <main>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Why Use Semantic HTML?</h2>
+      <p>Semantic HTML5 elements provide meaning to your content, improving how browsers and assistive technologies interpret the structure of a webpage. Elements like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> clearly define each section's role.</p>
+    </section>
 
-        <input type="submit" value="Register">
-    </form>
+    <section id="accessibility" aria-labelledby="accessibility-heading">
+      <h2 id="accessibility-heading">Accessibility Best Practices</h2>
+      <article>
+        <h3>Use Landmarks Wisely</h3>
+        <p>HTML5 provides built-in landmarks like <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;aside&gt;</code> that help screen readers quickly navigate the page.</p>
+      </article>
+      <article>
+        <h3>Meaningful Text & Labels</h3>
+        <p>Ensure all links have descriptive text. Use <code>aria</code> attributes and proper heading order to support assistive technologies.</p>
+      </article>
+    </section>
 
-    <br>
+    <section id="seo" aria-labelledby="seo-heading">
+      <h2 id="seo-heading">SEO Techniques for Beginners</h2>
+      <article>
+        <h3>Use Proper Headings</h3>
+        <p>Organize content using heading tags from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> in a logical order to help search engines understand your page structure.</p>
+      </article>
+      <article>
+        <h3>Optimize Metadata</h3>
+        <p>Include a <code>&lt;meta name="description"&gt;</code> tag with a clear summary of your page to improve search engine listings.</p>
+      </article>
+    </section>
+  </main>
 
-    <!-- Table Displaying User Information -->
-    <h2>Registered Users</h2>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>Jane Doe</td>
-            <td>jane@example.com</td>
-            <td>123-456-7890</td>
-        </tr>
-        <tr>
-            <td>John Smith</td>
-            <td>john@example.com</td>
-            <td>987-654-3210</td>
-        </tr>
-    </table>
+  <footer>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <address>
+        <p>Email: <a href="mailto:example@example.com">clangat223@gmail.com</a></p>
+        <p>Location: Nairobi, Kenya</p>
+      </address>
+    </section>
+    <p>&copy; 2025 Collins Kibet. All rights reserved.</p>
+  </footer>
 
-    <br>
-
-    <!-- Image -->
-    <h2>Our Office</h2>
-    <img src="My Image.jpg" alt="Office Image">
-
-    <br><br>
-
-    <!-- External Link -->
-    <a href="https://google.com" target="_blank">Visit Google</a>
-    </body>
-    
-    <link rel="stylesheet" href="styles.css">
+</body>
 </html>
